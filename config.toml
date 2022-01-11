@@ -1,0 +1,9 @@
+baseURL = 'https://blog.anvere.net/'
+languageCode = 'en-us'
+title = 'Anvere Blog'
+theme = "papermod"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+comments = true
