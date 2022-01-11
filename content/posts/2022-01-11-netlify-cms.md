@@ -5,4 +5,4 @@ description: bla
 ---
 bla bla
 
-![](/img/13662122.jpg)
+![](/upload/13662122.jpg)

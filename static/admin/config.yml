@@ -3,7 +3,7 @@ backend:
   repo: daibo83/anvere-blog-source
   branch: main # Branch to update (optional; defaults to master)
 media_folder: static/upload
-public_folder: static/upload
+public_folder: /upload
 collections:
   - name: 'posts'
     label: 'Posts'
