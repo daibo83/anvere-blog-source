@@ -7,3 +7,4 @@ theme = "papermod"
     [markup.goldmark.renderer]
       unsafe = true
 comments = true
+googleAnalytics = 'G-GBWQ1Q8Y49'
