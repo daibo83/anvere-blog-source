@@ -1,27 +1,27 @@
 ---
-title: From Anvere to ElasticSearch, with love
-date: 2022-01-07T10:00:58.000+00:00
-
+title: To ElasticSearch, with love
+date: 2022-01-16T02:00:58.000Z
+description: An appreciation letter to ElasticSearch, the inspirer of our product, Anvere.
 ---
-**From Anvere to ElasticSearch, with love**
-
-I would like to dedicate my most sincerely appreciation to ElasticSearch, the main drive that made me started Anvere.
+I would like to dedicate my most sincerely appreciation to **ElasticSearch**, the main drive that made me started **ANVERE**.
 
 ![](/uploads/despicable-me-minions.gif)
 
-It all began in 2016, when I was struggling with building a autocomplete API for geographical data for Goong. I was so unsatisfied with the search engine employed at that time, an engine that was based on SphinxSearch, produced subpar results and unsatisfying performance, that I decided to migrate to a completely new search engine instead of trying to fix it.
+It all began in 2016, when I was struggling with building an autocomplete API for geographical data at [Goong](https://www.goong.io/). The search engine that was employed at that time was based on SphinxSearch, took forever to return subpar results - underperforming in all aspects. This made me so frustrated that I decided to migrate to a completely new search engine instead of trying to fix it.
 
-There came **ElasticSearch** (sparkle, blinking effect)
+There came **ElasticSearch**.
 
 ![](/uploads/es.png)
 
-ES was (and still is) one of the most popular engines for information retrieval. ES is built on Lucene library and offers wide adoption in the full-text search domain. Its featuring advantages include:
+ElasticSearch (ES) was (and still is) one of the most popular engines for information retrieval. It is built on Lucene library and offers wide adoption in the full-text search domain. Its famous features include:
 
 * Extensive documentation: A large team of technicians and users contribute to the blab la
 * Overwhelmingly friendly and helpful community and ecosystem:
-* Recommended by prominent figures of the tech industry: ABC “best search engine”\[\[1\]\]
+* Recommended by prominent figures of the tech industry: ABC “best search engine”\[[1]]
 
-ES also features a neat spatial index for **location-based search results towards coordinates**. Perfect for our use- case, right? As a result of careful researches and a lot of discussion, my team decided to start our journey with ElasticSearch.
+ES also features a neat spatial index for location-based search results towards coordinates. Perfect for our use- case, right? 
+
+After lots and lots of researches and lengthy discussions, my team decided to start our journey with ElasticSearch.
 
 ![](/uploads/image2.gif)
 
@@ -31,11 +31,12 @@ A quick test, creating an index and importing a small subset of our address and 
 
 An indexing pipeline to ingest data from the PostgreSQL server that hosts our addresses and POIs data was quickly set up. With the entirety of the dataset indexed, the first difficulties arose. Just to name a few:
 
-* Results containing less input words would often rank higher than those with more: **For search input “John William Doe”, items containing only “John Doe” and “William Doe” would come out on top of “John William Doe”.**
-* **The engine took into account neither the order nor the proximity in which the keywords were entered: A search for New York would frequently return the result “Best new restaurant in York” way before “New York City”.**
+* Results containing less input words would often rank higher than those with more: For search input “John William Doe”, items containing only “John Doe” and “William Doe” would come out on top of “John William Doe”.
+* The engine took into account neither the order nor the proximity in which the keywords were entered: A search for New York would frequently return the result “Best new restaurant in York” way before “New York City”.
 * Typo-tolerant and word-prefix queries were painfully slow.
-  * **“Cannabis edibles” takes 5 seconds to complete.**
-  * **“Canabis edibes” \[sic\] takes 20 seconds.**
+
+  * “Cannabis edibles” takes 5 seconds to complete.
+  * “Canabis edibes” \[sic] takes 20 seconds.
 
 It turned out our vanilla experience of ES leaves a lot to be desired. Fortunately, we had the ES’s excellent documentation and other community resources of other communities to rely on.
 
@@ -65,5 +66,4 @@ By then, it had finally dawned on me that, in order to build a relevant full tex
 
 So yes, thank you very much, ElasticSearch! Without all the bumps you put me through, I would not have Anvere with: 1ms search time, smart filter, high typo-tolerance, etc etc brag brag!
 
-Experience Anvere first hand: here (Link to the trial page)
-
+Experience Anvere first hand: [here](https://anvere.net/)
